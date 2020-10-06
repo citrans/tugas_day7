@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Inputnama</string>
+    <string name="text_nama">Masukkan Nama Anda</string>
+    <string name="text_alamat">Masukkan alamat anda</string>
+    <string name="hint_nama">Silahkan Masukkan Nama Anda</string>
+    <string name="hint_alamat">Silahkan Masukkan Alamat Anda</string>
+    <string name="btn_simpan">Simpan</string>
+    <string name="btn_reset">Reset</string>
+</resources>

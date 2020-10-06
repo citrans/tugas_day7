@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_kalkulator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Dua Angka"
+        android:layout_marginTop="5dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:fontFamily="monospace"/>
+
+    <EditText
+        android:id="@+id/edit_angka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:inputType="number"
+        android:hint="Masukkan Angka Pertama"/>
+
+    <EditText
+        android:id="@+id/edit_angka2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:inputType="number"
+        android:hint="Masukkan Angka Kedua"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_margin="5dp"
+            android:id="@+id/btn_tambah"
+            android:onClick="tambah"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_margin="5dp"
+            android:id="@+id/btn_kurang"
+            android:onClick="kurang"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:layout_margin="5dp"
+            android:id="@+id/btn_kali"
+            android:onClick="kali"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_margin="5dp"
+            android:id="@+id/btn_bagi"
+            android:onClick="bagi"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_hapus"
+        android:layout_margin="5dp"
+        android:text="Hapus"
+        android:onClick="hapus"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="25dp"
+        android:text="Hasil"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_hasil"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:hint="0"
+        android:textSize="25dp"/>
+
+
+
+</LinearLayout>
